@@ -1,0 +1,19 @@
+.component{
+    padding: 1rem;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.container{
+    border:3px solid rgb(145, 145, 145);
+    border-radius: 8px;
+    padding:15px;
+    background-color: rgb(0, 0, 0);
+    box-shadow: 1 4px 6px;
+    color:rgb(255, 255, 255);
+    margin:5%;
+}
+
+.content img{
+    max-width: 100%;
+    max-height: 100%;
+}

@@ -1,8 +1,26 @@
-
+import data from './data.json';
+import Scp from './Scp';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import Nav from './nav';
 
 function App() {
   return (
-    <h1>Bare Bones React App</h1>
+    <Router>
+      <Nav data={data}/>
+      <Routes>
+
+        {
+          data.map(
+            scp=>(
+              <Route key={scp.subject}
+              path={`${scp.subject}`}
+              element={<Scp scp={scp}/>}
+              />
+            )
+          )
+        }
+      </Routes>
+    </Router>
   );
 }
 
