@@ -8,7 +8,7 @@ function Scp({scp})
             <h2>Class: {scp.class}</h2>
             <p><strong>Containment:</strong><br></br> {scp.containment}</p>
             <p><strong>Description:</strong><br></br>{scp.description}</p>
-            <img src={scp.image}/>
+            <img src={scp.image} alt={scp.subject}/>
         </div>
     )
 }
